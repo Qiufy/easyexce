@@ -7,9 +7,5 @@ import com.cy.pj.common.web.TimeAccessInterceptor;
 @Configuration
 public class SpringWebConfig implements WebMvcConfigurer{
 
-	@Override
-	public void addInterceptors(InterceptorRegistry registry) {
-		 registry.addInterceptor(new TimeAccessInterceptor())
-         .addPathPatterns("/user/doLogin");
-	}
+	
 }
